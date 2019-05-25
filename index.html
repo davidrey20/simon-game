@@ -5,23 +5,36 @@
     <title>Simon</title>
     <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
-    <h1 id="level-title">Press A Key to Start</h1>
+    <h1 id="level-title">Simon Game</h1>
+    <div class="custom-alert">
+      <h1 class="alert-title">Game Instructions</h1>
+      <p class="alert-text">
+        The game will display four colored buttons, each producing a particular
+        tone when it is pressed or displayed by the game. A round in the game
+        consists of the game lighting up one or more buttons in a random order,
+        after which the player must reproduce that order by pressing the
+        buttons. As the game progresses, the number of buttons to be pressed
+        increases.
+      </p>
+      <button class="next-level">Start Game</button>
+    </div>
+
     <div class="container">
       <div lass="row">
-        <div type="button" id="green" class="btn green"></div>
+        <div type="button" id="green" class="btn green hidden-element"></div>
 
-        <div type="button" id="red" class="btn red"></div>
+        <div type="button" id="red" class="btn red hidden-element"></div>
       </div>
 
       <div class="row">
-        <div type="button" id="yellow" class="btn yellow"></div>
-        <div type="button" id="blue" class="btn blue"></div>
+        <div type="button" id="yellow" class="btn yellow hidden-element"></div>
+        <div type="button" id="blue" class="btn blue hidden-element"></div>
       </div>
     </div>
 
